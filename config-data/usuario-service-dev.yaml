@@ -1,2 +1,6 @@
 server:
   port: 8005
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
