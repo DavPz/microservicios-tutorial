@@ -10,10 +10,11 @@ spring:
       server:
         git:
           #uri: file:///path/to/your/config/dir
-          uri: git@github.com:DavPz/config-repo.git
+          uri: git@github.com:DavPz/microservicios-tutorial.git
           # This allows us to use client service names (i.e. application names) as sub-directories in the config repository. See below example.
-          search-paths: 'main' 
           clone-on-start: true
           delete-untracked-branches: true
           ignore-local-ssh-settings: false
-          refresh-rate: 300
+          refresh-rate: 10
+          default-label: 'config-server'
+          search-paths: 'config-data' 
