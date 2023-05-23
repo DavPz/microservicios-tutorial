@@ -1,7 +1,9 @@
+# application.yml file of the client service (Spring Cloud Config Client)
 spring:
   application:
     name: usuario-service
+  config:
+    import: configserver:http://localhost:8081
   cloud:
     config:
-      enabled: true
-      uri: http://localhost:8081
+      fail-fast: true
