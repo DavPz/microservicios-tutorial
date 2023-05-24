@@ -16,5 +16,5 @@ spring:
           delete-untracked-branches: true
           ignore-local-ssh-settings: false
           refresh-rate: 10
-          default-label: 'multiple-instance'
+          default-label: 'gateway'
           search-paths: 'config-data' 
