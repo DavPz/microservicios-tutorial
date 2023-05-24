@@ -1,20 +1,12 @@
-
-# application.yml file of the config server (Spring Cloud Config Server)
 server:
-  port: 8081 # or whatever
+  port: 8081
 spring:
-  application:
-    name: config-service
-  cloud:
+  cloud:     
     config:
       server:
         git:
-          #uri: file:///path/to/your/config/dir
-          uri: git@github.com:DavPz/microservicios-tutorial.git
-          # This allows us to use client service names (i.e. application names) as sub-directories in the config repository. See below example.
-          clone-on-start: true
-          delete-untracked-branches: true
-          ignore-local-ssh-settings: false
-          refresh-rate: 300
-          default-label: 'gateway'
-          search-paths: 'config-data' 
+          default-label: gateway
+          uri: https://github.com/DavPz/microservicios-tutorial.git
+          search-paths: config-data
+  application:
+    name: config-service
