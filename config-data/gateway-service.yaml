@@ -17,7 +17,7 @@ spring:
           enable: true
       routes:
         - id: usuario-service
-          uri: lb://usuario-service
+          uri: http://localhost
           predicates:
             - Path=/usuario/
         - id: moto-service
