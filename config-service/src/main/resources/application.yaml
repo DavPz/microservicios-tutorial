@@ -15,6 +15,6 @@ spring:
           clone-on-start: true
           delete-untracked-branches: true
           ignore-local-ssh-settings: false
-          refresh-rate: 10
+          refresh-rate: 300
           default-label: 'gateway'
           search-paths: 'config-data' 
